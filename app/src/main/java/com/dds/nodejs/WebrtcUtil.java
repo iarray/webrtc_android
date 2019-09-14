@@ -20,32 +20,41 @@ public class WebrtcUtil {
     // turn and stun
     private static MyIceServer[] iceServers = {
 
-            new MyIceServer("stun:stun.l.google.com:19302"),
+//            new MyIceServer("stun:stun.l.google.com:19302"),
+//
+//            // 测试地址0
+//            new MyIceServer("stun:global.stun.twilio.com:3478?transport=udp"),
+//            new MyIceServer("turn:global.turn.twilio.com:3478?transport=udp",
+//                    "79fdd6b3c57147c5cc44944344c69d85624b63ec30624b8674ddc67b145e3f3c",
+//                    "xjfTOLkVmDtvFDrDKvpacXU7YofAwPg6P6TXKiztVGw"),
+//            new MyIceServer("turn:global.turn.twilio.com:3478?transport=tcp",
+//                    "79fdd6b3c57147c5cc44944344c69d85624b63ec30624b8674ddc67b145e3f3c",
+//                    "xjfTOLkVmDtvFDrDKvpacXU7YofAwPg6P6TXKiztVGw"),
+//
+//            // 测试地址1
+//            new MyIceServer("stun:118.25.25.147:3478?transport=udp"),
+//            new MyIceServer("turn:118.25.25.147:3478?transport=udp",
+//                    "ddssingsong",
+//                    "123456"),
+//            new MyIceServer("turn:118.25.25.147:3478?transport=tcp",
+//                    "ddssingsong",
+//                    "123456"),
+//            // 测试地址2
+//            new MyIceServer("turn:157.255.51.168:3478?transport=udp",
+//                    "ddssingsong",
+//                    "123456"),
+//            new MyIceServer("turn:157.255.51.168:3478?transport=tcp",
+//                    "ddssingsong",
+//                    "123456")
 
-            // 测试地址0
-            new MyIceServer("stun:global.stun.twilio.com:3478?transport=udp"),
-            new MyIceServer("turn:global.turn.twilio.com:3478?transport=udp",
-                    "79fdd6b3c57147c5cc44944344c69d85624b63ec30624b8674ddc67b145e3f3c",
-                    "xjfTOLkVmDtvFDrDKvpacXU7YofAwPg6P6TXKiztVGw"),
-            new MyIceServer("turn:global.turn.twilio.com:3478?transport=tcp",
-                    "79fdd6b3c57147c5cc44944344c69d85624b63ec30624b8674ddc67b145e3f3c",
-                    "xjfTOLkVmDtvFDrDKvpacXU7YofAwPg6P6TXKiztVGw"),
 
-            // 测试地址1
-            new MyIceServer("stun:118.25.25.147:3478?transport=udp"),
-            new MyIceServer("turn:118.25.25.147:3478?transport=udp",
+            new MyIceServer("stun:hepeihua.com:3478?transport=udp"),
+            new MyIceServer("turn:hepeihua.com:3478?transport=udp",
                     "ddssingsong",
                     "123456"),
-            new MyIceServer("turn:118.25.25.147:3478?transport=tcp",
+            new MyIceServer("turn:hepeihua.com:3478?transport=tcp",
                     "ddssingsong",
                     "123456"),
-            // 测试地址2
-            new MyIceServer("turn:157.255.51.168:3478?transport=udp",
-                    "ddssingsong",
-                    "123456"),
-            new MyIceServer("turn:157.255.51.168:3478?transport=tcp",
-                    "ddssingsong",
-                    "123456")
 
     };
 

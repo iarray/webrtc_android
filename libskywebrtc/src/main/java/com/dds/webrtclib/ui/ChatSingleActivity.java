@@ -162,11 +162,13 @@ public class ChatSingleActivity extends AppCompatActivity {
 
             @Override
             public void onAddRemoteStream(MediaStream stream, String socketId) {
-                if (stream.videoTracks.size() > 0) {
+                boolean hasVideoTracks = stream.videoTracks.size() > 0;
+                if (hasVideoTracks && remoteRender != null) {
                     stream.videoTracks.get(0).addSink(remoteRender);
                 }
                 if (videoEnable) {
-                    stream.videoTracks.get(0).setEnabled(true);
+                    if (hasVideoTracks)
+                        stream.videoTracks.get(0).setEnabled(true);
 
                     runOnUiThread(() -> setSwappedFeeds(false));
                 }
